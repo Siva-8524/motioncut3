@@ -1,0 +1,158 @@
+/*General reset*/
+.{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
+}
+h1{
+color:red;}
+.clothes{
+display:flex;
+justify-content:center;
+align-items:center;}
+
+/*body styling*/
+body{
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    background-color: silver;
+    color: #333;
+}
+/*header styling*/
+header{
+    background: lightblue;
+    color: red;
+    padding: 1rem 0;
+
+}
+header nav ul{
+    list-style: none;
+    display: flex;
+    justify-content: center;
+font-style:bold;
+}
+header nav ul li{
+    margin: 0 1rem;
+}
+header nav ul li a{
+    color: blue;
+    text-decoration: none;
+}
+/*main content styling*/
+main{
+    padding: 2rem;
+}
+.product1{
+    background-color:  orange;
+    padding: 2rem;
+    margin: 2rem auto;
+    border-radius: 5px;
+    max-width: 500px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+
+}
+.product2{
+    background-color: yellow;
+    padding: 2rem;
+    margin: 2rem auto;
+    border-radius: 5px;
+    max-width: 500px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+
+}
+.product3{
+    background-color:  lightblue;
+    padding: 2rem;
+    margin: 2rem auto;
+    border-radius: 5px;
+    max-width: 500px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+
+}
+.product4{
+    background-color: grey;
+    padding: 2rem;
+    margin: 2rem auto;
+    border-radius: 5px;
+    max-width: 500px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+
+}
+.product-name{
+    font-size: 2rem;
+    margin-bottom: 1rem;
+}
+.product-image{
+    width: 100%;
+    height: auto;
+    margin-bottom: 1 rem;
+}
+.product-description{
+    font-size: 1rem;
+    margin-bottom: 1rem;
+}
+.product-price{
+    font-size:1.5;
+    color: #e74c3c;
+    margin-bottom: 1rem;
+}
+.cta-button{
+    background:#e74c3c ;
+    color:#fff ;
+    border: none;
+    padding: 0.5rem 1rem;
+    cursor: pointer;
+    transition: background 0.3s;
+}
+.cta-button:hover{
+    background-color: lightgreen;
+}
+/*footer styling*/
+footer{
+    background: #333;
+    color:#fff;
+    text-align: center;
+    padding: 1rem 0;
+    position:fixed;
+    bottom: 0;
+    width: 100%;
+}
+/*responsive design*/
+@media (max-width:768px) {
+    header nav ul{
+        flex-direction: column;
+        text-align: center;
+    }
+    main{
+        padding: 1rem;
+    }
+    .product{
+        margin: 1rem;
+        padding: 1rem;
+    }
+    .product-name{
+        font-size: 1.5rem;
+    }
+    .product-price{
+        font-size:1.2rem ;
+
+
+    }
+    
+}
+@media(max-width:480px){
+    .product{
+        margin: 0.5rem;
+        padding: 0.5rem;
+    }
+    .product-name{
+        font-size: 1.2rem;
+    }
+    .product-price{
+        font-size: 1rem;
+    }
+    .cta-button{
+        padding: 0.rem;
+    }
+}
